@@ -3175,7 +3175,33 @@ names %&gt;%
 <pre >## # A tibble: 1 x 5
 ##   var_one  var_two var_three var_four percent_var
 ##   &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;      
-## 1 ALL CAPS dot     No space  Space    symbol</pre></article></slide>
+## 1 ALL CAPS dot     No space  Space    symbol</pre>
+
+</article></slide><slide class=""><hgroup><h2>janitor::round_half_up()</h2></hgroup><article  id="janitorround_half_up">
+
+<ul>
+<li>The base <code>round()</code> function rounds .5 up for odd numbers, and down for even numbers:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>x &lt;- c(1.5, 2.5, 3.5, 4.5)
+round(x)</pre>
+
+<pre >## [1] 2 2 4 4</pre>
+
+</article></slide><slide class=""><hgroup><h2>janitor::round_half_up()</h2></hgroup><article  id="janitorround_half_up-1">
+
+<ul>
+<li><code>janitor::round_half_up()</code> always rounds .5 up:</li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>x &lt;- c(1.5, 2.5, 3.5, 4.5)
+janitor::round_half_up(x)</pre>
+
+<pre >## [1] 2 3 4 5</pre>
+
+<ul>
+<li>Using <code>janitor::round_half_up()</code> instead of <code>round()</code> is <a href='https://www.isdscotland.org/About-ISD/Methodologies/_docs/Rounding-Methods-in-Different-Software_v1-0.pdf' title=''>recommended by SAG</a></li>
+</ul></article></slide>
 
 
   <slide class="backdrop"></slide>

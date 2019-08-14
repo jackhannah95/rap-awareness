@@ -74,3 +74,25 @@ names <- tibble::tibble(VAR_ONE = "ALL CAPS",
 names %>%
   janitor::clean_names()
 ```
+
+
+## janitor::round_half_up()
+
+- The base `round()` function rounds .5 up for odd numbers, and down for even numbers:
+
+```{r}
+x <- c(1.5, 2.5, 3.5, 4.5)
+round(x)
+```
+
+
+## janitor::round_half_up()
+
+- `janitor::round_half_up()` always rounds .5 up:
+
+```{r}
+x <- c(1.5, 2.5, 3.5, 4.5)
+janitor::round_half_up(x)
+```
+
+- Using `janitor::round_half_up()` instead of `round()` is [recommended by SAG](https://www.isdscotland.org/About-ISD/Methodologies/_docs/Rounding-Methods-in-Different-Software_v1-0.pdf)

@@ -11,9 +11,9 @@ output:
 ```{r setup, include = FALSE}
 # Load packages required
 library(knitr)
-library(magrittr)
+library(janitor)
 
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Setting a margin in RStudio
@@ -48,4 +48,29 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```{r, echo = FALSE, fig.align = 'center'}
 include_graphics("images/janitor_logo.png")
+```
+
+
+## janitor::clean_names()
+
+```{r}
+names <- tibble::tibble(VAR_ONE = "ALL CAPS",
+                        var.two = "dot",
+                        VarThree = "No space",
+                        `Var four` = "Space",
+                        `% Var` = "symbol")
+names
+```
+
+
+## janitor::clean_names()
+
+```{r}
+names <- tibble::tibble(VAR_ONE = "ALL CAPS",
+                        var.two = "dot",
+                        VarThree = "No space",
+                        `Var four` = "Space",
+                        `% Var` = "symbol")
+names %>%
+  janitor::clean_names()
 ```

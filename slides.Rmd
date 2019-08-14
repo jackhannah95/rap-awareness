@@ -26,26 +26,26 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - It defaults to 80 characters, but that can be changed
 
-## Slide title
 
-```{r out.width = "70%", fig.align = 'center'}
-include_graphics("images/value.png")
+## phiproject package
+
+- [R projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) are a way of bundling together related files and scripts into a single folder
+
+- Projects come with a `.Rproj` file, and wherever this is saved is where RStudio sets the working directory
+
+- Using projects is recommended in [PHI's R style guide](https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/PHI%20R%20style%20guide.md)
+
+- A project which follows the recommended structure can be created automatically using the [phiproject package](https://github.com/Health-SocialCare-Scotland/phiproject])
+
+
+## janitor package
+
+- [janitor](https://github.com/sfirke/janitor) provides a multitude of functions for 'cleaning' data
+
+- It's specifically designed with beginner and intermediate R users in mind
+
+- While not part of the [tidyverse](https://www.tidyverse.org/packages/), it's designed to work well with pipes
+
+```{r, echo = FALSE, fig.align = 'center'}
+include_graphics("images/janitor_logo.png")
 ```
-
-## This slide has two columns 
-<!-- It seems easier to do with htmltags than with other ways --> 
-<div style="float: left; width: 50%; text-align: left">
-* Bullet point
-* Bullet point with *italic text*
-* Bullet point with **bold text**
-</div>
-
-<div style="float: right; width: 50%;">
-```{r out.width = "100%", fig.align = 'right'}
-hist(rnorm(100))
-```
-</div>
-
-## Slide title
-
-[ISD homepage](http://www.isdscotland.org/)

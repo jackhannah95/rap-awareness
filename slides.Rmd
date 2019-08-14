@@ -12,22 +12,19 @@ output:
 # Load packages required
 library(knitr)
 library(magrittr)
-library(kableExtra)
 
 knitr::opts_chunk$set(echo = FALSE)
-
-# Create data frame for table
-table_contents <- data.frame(c("Text", "Text",
-                               "Text", "Text",
-                               "Text"),
-                             c(1:5))
 ```
 
-## Slide title
+## Setting a margin in RStudio
 
-- Bullet point
-- Bullet point with *italic text*
-- Bullet point with **bold text**
+- It's possible to set a margin in RStudio, to give an indication of when code should be split over multiple lines
+
+
+- To set the margin, go to Tools -> Global Options -> Code -> Display -> tick the 'Show margin' box
+
+
+- It defaults to 80 characters, but that can be changed
 
 ## Slide title
 
@@ -52,11 +49,3 @@ hist(rnorm(100))
 ## Slide title
 
 [ISD homepage](http://www.isdscotland.org/)
-
-## Slide title
-
-```{r, echo = FALSE}
-    kable(table_contents,
-          col.names = c("Column heading", "Column heading"),
-          format = "markdown")
-```

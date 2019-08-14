@@ -96,3 +96,14 @@ janitor::round_half_up(x)
 ```
 
 - Using `janitor::round_half_up()` instead of `round()` is [recommended by SAG](https://www.isdscotland.org/About-ISD/Methodologies/_docs/Rounding-Methods-in-Different-Software_v1-0.pdf)
+
+
+## Links
+
+Email: [jack.hannah1@nhs.net](mailto:jack.hannah1@nhs.net)
+
+
+[Transforming Publishing on GitHub](https://github.com/NHS-NSS-transforming-publications)
+
+
+[PHI on GitHub](https://github.com/Health-SocialCare-Scotland)

@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Using projects is recommended in [PHI's R style guide](https://github.com/Health-SocialCare-Scotland/R-Resources/blob/master/PHI%20R%20style%20guide.md)
 
-- A project which follows the recommended structure can be created automatically using the [phiproject package](https://github.com/Health-SocialCare-Scotland/phiproject])
+- A project which follows the recommended structure can be created automatically using the [phiproject package](https://github.com/Health-SocialCare-Scotland/phiproject)
 
 
 ## janitor package

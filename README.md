@@ -1,3 +1,1 @@
-# RAP Awareness
-
-Slides for [talk on best practice in R](https://www.youtube.com/watch?v=j14tVgKd2Ok&feature=youtu.be) as part of [TPP](https://www.isdscotland.org/Products-and-Services/Transforming-Publishing-Programme/)'s internal RAP/R awareness session on 16/08/2019. Slides can be viewed on [RPubs](http://rpubs.com/jackhannah95/rap-awareness).
+The most up to date version of the materials for this presentation can now be found in my [presentations repository](https://github.com/jackhannah95/presentations/tree/main/2019-08-16_r-best-practices).
